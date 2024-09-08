@@ -1,0 +1,702 @@
+body{
+    margin:0px 45px;
+    margin:0px;
+    font-family: proxima-nova, helveticaneue, Helvetica, Arial, lucida grande, sans-serif;
+}
+
+/* header element is divided into 2 
+   .hackster-logo
+   .hackster-login */
+header
+{
+    /* background-color:#3b5999; */
+  
+    width:100%;
+    height: 71px;
+    padding:15.5px 5px;
+    box-sizing:border-box;
+    
+}
+
+/* .hackster-logo is divided into 3 parts
+     - .hackster-logo-image
+     - .hackster-logo-searchbar
+     - . */
+.hackster-logo
+{
+    float:left;
+    width:50%;
+}
+
+.hackster-logo-image
+{
+    float:left;
+    width:150px;
+}
+.hackster-logo-image img
+{  
+    
+    height:40px;
+    width:150px;
+}
+.hackster-logo-searchbar
+{
+   margin-left:30px;
+   float:left;
+   width:370px;
+   border:1px solid #5caae0;
+   border-radius:4px;
+   height:45px;
+
+}
+/*  .hackster-logo-searchbar into 3
+    
+text
+select
+svg
+      
+*/
+/* text */
+.searchbar-text
+{
+    float:left;
+    width:227px;
+    height:40px;
+    border:none;
+    margin:2px;
+    font-size:15px;
+
+}
+.searchbar-text::placeholder
+{
+    color:rgb(171, 171, 198);
+    padding-left:20px;
+}
+/* select */
+.searchbar-select
+{
+    float:left;
+    width:93px;
+    height:44px;
+    padding:6px 0px;
+    border:none;
+    color:rgb(171, 171, 198);
+    font-size: 15px;
+}
+/* svg  */
+.hackster-logo-searchbar svg
+{
+    float:left;
+    width:31px;
+    height:44px;
+}
+
+
+/* hackster-login */
+
+.hackster-login
+{
+    float:right;
+    width:290px;
+    height:55px;
+}
+
+
+.hackster-login svg 
+{
+    float:left;
+    height:70px;
+    width:70px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    
+}
+.hackster-login a
+{
+    float:left;
+    text-decoration:none;
+    padding-top: 20px;
+    padding-left: 5px;
+    height:55px;
+    width:84px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size: 15px;
+    box-shadow: none;
+    color: #4a4a4a;
+}
+.hackster-login a:hover
+{
+    text-decoration:underline;
+}
+.hackster-login button
+{
+    float:left;
+    height:50px;
+    width:80px;
+    background-color: #2e9fe6;
+    border: 1px solid #2e9fe6;
+    border-radius: 4px;
+    color: #fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.hackster-login button:hover
+{
+    background-color: #1f7fbb;
+}
+
+/* navbar section is divided into 2 navbar-search and navbar-socials */
+.navbar
+{   
+    
+    width:100%;
+    height:44px;
+    border-top:thin solid #bcb6b6;
+    border-bottom:thin solid #bcb6b6;
+    /* background-color: aqua; */
+}
+/* navbar search */
+.navbar-search
+{
+    float:left;
+    width:590px;
+    /* background-color: red; */
+
+}
+    /* doing flexbox in navbar search  */
+        .search-container
+        {
+            display: flex;
+            justify-content:space-around;
+            /* background-color: #7ac722; */
+            
+        }
+          .card
+          {
+            
+            padding-top:12px;
+            height :32px;
+            font-size: 16px;
+            cursor:pointer;
+            
+           }
+               .card a
+               {
+                text-decoration:none;
+                color: #4a4a4a;
+               } 
+
+               .card :hover
+               {
+                padding-bottom:12px;
+                border-bottom:solid #448fd0;
+                color: #4a4a4a;
+               }
+
+
+
+/* navbar socials */
+.navbar-s
+{
+    float:right;
+    width:350px;
+    height:45px;
+    border-left:thin solid  #646060;
+
+}
+
+
+     .soc 
+     {
+       /* background-color: #7ac722;  */
+       padding-left:15px;
+       padding-top:6px;
+       cursor:pointer;
+       display:inline-block;
+
+      }
+       .soc img
+        {
+              height:26px;
+              width:26px;
+        }
+     
+
+/* main element code  */
+
+.main
+{
+    margin:0px 45px ;
+    height:320px;
+    padding:40px 0px;
+}
+
+
+.main-hacksterpicks p
+{
+    color: #111;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* hacksterpicks left is divided into 2 childs used float */
+.main-hacksterpicks-left
+{
+    float:left;
+    width:790px;
+    height:281px;
+}
+
+
+    .main-avnetboard
+  {
+    float:left;
+    border: 1px solid #d8d8d8;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+    border-top-left-radius: 4px;
+    width: 415px;
+    height:281px;
+   }  
+
+
+        /* avnet board is sub divided into 3 uses flexbox */
+          .avnetboard-container
+          {
+            display:flex;
+            flex-direction: column;
+            height:220px;
+            padding:30px;
+            justify-content:space-evenly;
+          }
+              .news
+              {
+                width:340px;
+              }
+                .news-heading p
+                 {
+                    height:14px;
+                    font-weight: 700;
+                    color: #767676;
+                    font-size: 12px;
+                    letter-spacing: .3px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                 }
+
+                .news-main a
+                {
+                    color: #111;
+                    cursor: pointer;
+                    height:64px;
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            
+                        .news-main a:hover
+                        {
+                            text-decoration:underline;
+                        }
+
+/* avnet image   */
+   .main-avnetboard-image
+  {
+    float:left;
+    width:300px;
+   }
+   .main-avnetboard-image img
+   {
+    height: 283px;
+   }
+
+/* main-hacksterpicks-right container */
+   .main-hacksterpicks-right
+   {
+    float:right;
+    height:281px;
+    width:350px;
+   }
+    /* diveded into 3  flexbox is used*/
+    .article-container
+          {
+            display:flex;
+            flex-direction: column;
+            height:281px;
+            /* padding:30px; */
+            justify-content:space-around;
+            box-sizing: border-box;
+            border-top: 5px solid #2e9fe6;
+          }
+          .article
+          {
+               /* background-color: #5caae0; */
+               width:281px;
+          }
+         
+
+            .avik
+            {
+                height:79px;
+                width:350px;
+            }
+
+            /* implementing grid inside avik */
+            .avik-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+                grid-template-rows: 1fr 2fr; /* Two rows with equal height */
+                gap: 1px;
+                line-height: 22px;
+              }
+              .item1 {
+                /* background-color: red; */
+                grid-column: 1 / 2; /* First column */
+                grid-row: 1 / 2; /* First row */
+                width:237px;
+                height:14px;
+                
+              }      
+                  .item1 p
+                  {
+                    color: #767676;
+                    font-size: 12px;
+                    letter-spacing: .3px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                  }
+              .item2 {
+                
+                grid-column: 1 / 2; /* First column */
+                grid-row: 2 / 3; /* Second row */
+                width:237px;
+                height:22px;
+                
+              }     
+
+
+                   .item2 a
+                   {
+                    font-weight: 700 ;
+                    color: #4a4a4a;
+                    font-size: 16px;
+                    text-decoration:none;
+                    cursor:pointer;
+                      
+                   }
+                   .item2 a:hover
+                   {
+                    text-decoration:underline;
+                   }
+              .item3 {
+                /* background-color:yellow; */
+                grid-column: 2 / 3; /* Second column */
+                grid-row: 1 / 3; /* Spans both rows */
+                width: 70px;
+              }
+                  .item3 img
+                  {
+                    height: 70px;
+                    width: 70px;
+                    padding-left:40px;
+                    
+                  }
+            .pi 
+            {
+                height:92px;
+                border-bottom:1px solid #d8d8d8 ;
+                border-top: 1px solid #d8d8d8;
+                
+            }
+            .bald
+            {
+                height:93px;
+            }
+
+
+
+/* videoclass */
+ .hmain
+{
+    margin:0px 45px ;
+    height:372px;
+    padding:40px 0px;
+}  
+.hmain-video
+{
+    margin:0px 45px ;
+    height:372px;
+    padding:20px 0px;
+}  
+
+/* divided into 2 hackster heading - videoheading ,video-conatiner */
+
+.divheading
+{
+    height:23px;
+}
+  /* divided into 2 hvideos viewall */
+   .divhead
+   {
+    float:left;  
+   }
+     .divhead p
+     
+               {
+                  font-size: 16px;
+                  font-weight: 700;
+                  height:23px;
+                  margin:0;
+                }
+
+   .view-all
+   {
+    float:right;
+   }
+       .view-all a
+             {
+                color: #767676;
+                text-decoration:none;
+             }
+             .view-all a:hover
+             {
+                text-decoration: underline;
+             }
+
+       
+             
+/* hackstervideos-implementing flexbox */
+
+.hcontainer
+{
+    display:flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height:300px;
+    padding: 15px 0;
+}
+    .hcard
+     {
+      width:270px;
+      height:270px;
+      /* background-color: #2e9fe6; */
+     }
+
+
+.vcontainer 
+ {
+    width:270px;
+    height:270px;
+    border: 1px solid #d8d8d8;
+    border-radius:4px;
+ }
+   
+   .five img
+   {
+    height:150px;
+    width:269px;
+    border-radius:4px;
+    /* background-color: rgb(255, 189, 127); */
+   }
+
+   .vsubcontainer
+   {
+    height:116px;
+    width:268px;
+    
+    /* background-color: rgb(217, 205, 205); */
+   }
+
+   .link
+   {
+    width:243px;
+    height:44px;
+    padding-left:10px;
+   }
+   .link a
+   {
+    font-weight: 700;
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 22px;  
+    text-decoration:none;
+   }
+     .link a:hover
+     {
+        text-decoration:underline;
+     }
+   .para{
+    width:238px;
+    height:7px;
+    padding-left:10px;
+   }
+   .para p
+   {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px; 
+   }
+   .views{
+    width:238px;
+    height:14px;
+    padding-left:10px;
+   }
+   .views p
+   {
+    font-size: 12px;
+    line-height: 14px;
+    color: #4a4a4a;
+    font-weight: 400;
+
+
+   }
+
+
+   
+  
+
+   /* featured projetcs */
+
+   .fhcontainer
+{
+    display:flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height:380px;
+    padding: 15px 0;
+}
+    .fhcard
+     {
+      width:270px;
+      height:348px;
+      /* background-color: #2e9fe6; */
+     }
+
+
+
+.fvcontainer 
+ {
+    width:270px;
+    height:350px;
+    border: 1px solid #d8d8d8;
+    border-radius:4px;
+ }
+   
+   .ffive img
+   {
+    height:200px;
+    width:269px;
+    border-radius:4px;
+    /* background-color: rgb(255, 189, 127); */
+   }
+
+   .fvsubcontainer
+   {
+    height:104px;
+    width:268px;
+    
+    /* background-color: rgb(217, 205, 205); */
+   }
+
+
+   .fvsubcontainer
+   {
+    height:105px;
+    width:268px;
+    
+    /* background-color: rgb(217, 205, 205); */
+   }
+
+   .flink
+   {
+    width:238px;
+    height:34px;
+    padding-left:10px;
+    padding-top:10px;
+   }
+   .flink a
+   {
+    font-weight: 700;
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 22px;  
+    text-decoration:none;
+   }
+     .flink a:hover
+     {
+        text-decoration:underline;
+     }
+   .fpara{
+    width:238px;
+    height:7px;
+    padding-left:10px;
+   }
+   .fpara p
+   {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px; 
+   }
+   .fbutton
+   {
+    height:40px;
+    border-top: 1px solid #d8d8d8;
+    margin-top:40px;
+    width:271px
+   }
+
+
+   .fsbutton1
+   {
+    float:left;
+    margin-left:20px;   
+    margin-top:5px;
+    
+  }
+   .fsbutton2
+   {
+    float:right;
+    margin-top:5px;
+    margin-right:20px; 
+    cursor:pointer;
+   }
+   #fsb1{
+    background-color: white;
+    border: 1px solid #2aadb6;
+    border-radius:2px;
+    cursor: pointer;
+ }
+ #fsb3{
+    background-color: white;
+    border: none;
+    border-radius:2px;
+    cursor: pointer;
+ }
+ #fsb2{
+    background-color: white;
+    border: 1px solid #232525;
+    border-radius:2px;
+    cursor: pointer;
+ }
+   .fbimg1
+   {
+    height:20px;
+    padding-top: 2px;
+   }
+   .fbimg2
+   {
+    height:20px;
+    padding-top: 2px;
+    width:50px;
+   }
+   
