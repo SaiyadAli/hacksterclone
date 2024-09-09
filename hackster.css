@@ -432,7 +432,8 @@ svg
 {
     margin:0px 45px ;
     height:372px;
-    padding:20px 0px;
+    padding-top:30px ;
+
 }  
 
 /* divided into 2 hackster heading - videoheading ,video-conatiner */
@@ -700,3 +701,185 @@ svg
     width:50px;
    }
    
+
+
+   .seedcontainer
+   {
+    height:347px;
+    width:270px;
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border: 1px solid #d8d8d8;
+    border-radius:4px;
+    
+   }
+
+   
+   .seed1
+   {
+    height:82px;
+    width:238px;
+    align-self:center;
+   }
+      .seed-image-container
+      {
+        height:82px;
+        width:82px;
+        float:left;
+        border: 1px solid #d8d8d8;
+      }
+        .seed-image-container img
+        {
+          height:70px;
+          width:70px;
+          padding:6px;
+        }
+  
+   .seed2
+   {
+    height:22px;
+    width:238px;
+    align-self:center;
+   }
+      .seed2 a
+      {
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+        text-decoration:none;
+        color: #111;
+        font-weight: 700;
+      }
+          .seed2 a:hover 
+            {
+              text-decoration:underline;
+            }
+
+   .seed2
+   {
+    height:22px;
+    width:238px;
+    align-self:center;
+   }
+   .seed3
+   {
+    height:36px;
+    width:238px;
+    align-self:center;
+   }  
+         .seed3 p
+          {
+            color: #4a4a4a;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+          }
+   .seed4
+   {
+    height:70px;
+    width:238px;
+    align-self:center;
+   }
+   .seed5
+   {
+    height:14px;
+    width:238px;
+    align-self:center;
+   }
+        .seed5
+          {
+            height:14px;
+            font-size: 12px;
+            color: #4a4a4a;
+             font-weight: 400;
+             padding-bottom: 5px;
+         }
+         
+   
+   .seed6
+   {
+    height:30px;
+    width:238px;
+    align-self:center;
+   }
+        .seed6 button
+        { 
+            width:217px;
+            color: #fff;
+            background-color: #1b7dbb;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            border: 1px solid #2e9fe6;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor:pointer;
+        }
+            .seed6 button:hover
+            {
+                background-color: #3392ce;
+            }
+   
+
+/* footer part  */
+
+footer
+{
+    height:250px;
+    box-sizing:border-box;
+    padding:45px 45px 30px 45px;
+    margin:auto;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    font-size: .8em;
+}
+  .footer-main
+  {
+    height:170px;
+    width:1140px;
+  }
+
+  .footer-main-container
+  {
+    float:left;
+    width:880px;
+    height:170px;
+    display:flex;
+    flex-flow: row wrap;
+  }
+
+     .footercard
+     {
+      width:220px;
+      
+     }
+       .footercard h3
+       {
+        font-weight: 700;
+        cursor:pointer;
+       }
+       .footercard p
+       {
+        margin:4px;
+        cursor:pointer;
+       }
+           .footercard p:hover
+           {
+            color: #1b7dbb;
+            text-decoration:underline;
+           }
+           .footercard h3:hover
+           {
+            text-decoration:underline;
+           }
+  .footer-copyright
+  {
+    float:right;
+    width:260px;
+    height:162px;
+  }   
+       
